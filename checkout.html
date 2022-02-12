@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8">
+            <title></title>
+        </head>
+        <body>
+            <form class="" onsubmit = "saveName()" action="thankyou.html" method="post">
+                <fieldset style = "width: 60%">
+                <legend>CheckOut</legend>
+                <p>Item name: <span id = "itemName"></span></p>
+                <br>
+                <p>Item Price: <span id = "itemprice"></span></p>
+                <hr style ="margin:1em;">
+                <label for="un">Username : <input type="text" name="Username"placeholder="type username" id ='un' value=""></label>
+                <label for="em">Email : <input type="email" name="Username"placeholder="type email" id ='em' value=""></label>
+                <input type="submit" name="submit_bt" value="SUBMIT ORDER" style = "margin-top:2em;"></fieldset>
+            </form>
+                <script type="text/javascript">
+               document.getElementById("itemName").innerHTML = localStorage.getItem("flower");
+               document.getElementById("itemprice").innerHTML = localStorage.getItem("flowerPrice");
+               userName = document.querySelector('#un')
+               function saveName()
+               {
+                localStorage.setItem("name",userName.value);
+               }
+               </script>

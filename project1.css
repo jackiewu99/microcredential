@@ -1,0 +1,406 @@
+*{box-sizing: border-box;}
+.body{
+    background-color: lightyellow;
+}
+.cont1{
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.change{
+    margin-left: 550px;
+    top:-35px;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    animation-name: zoom;
+    animation-duration: 2s;
+}
+
+.topText1{
+    animation-name: translateY1;
+    animation-duration: 2s;
+    margin-left: 200px;
+    padding-top:-30px;
+    font-style: italic;
+}
+
+.topText2{
+    animation-name: translateY2;
+    animation-duration: 2s;
+    margin-left: 200px;
+}
+
+@keyframes zoom {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}    
+}
+
+@keyframes translateY1{
+    0%{transform:translateY(-50px)}
+    50%{transform:translateY(50px)}
+    100%{transform:translateY(0px)}
+}
+
+@keyframes translateY2{
+    0%{transform:translateY(50px)}
+    50%{transform:translateY(-50px)}
+    100%{transform:translateY(0px)}
+}
+
+.slideshow1{
+    width: 1000px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.slide-wrapper1{
+    width: 300%;
+    height: 100%;
+    animation: slideshow1 20s infinite;
+}
+
+.slide1,.slide2,.slide3{
+    height: 100%;
+    width: 33.333%;
+    float:left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@keyframes slideshow1 {
+    0%{margin-left: 0%;}
+    25%{margin-left: -100%;}
+    30%{margin-left: -100%;}
+    45%{margin-left: -200%;}
+    50%{margin-left: -200%;}
+    65%{margin-left: -100%;}
+    70%{margin-left: -100%;}
+    85%{margin-left: 0%;}
+    100%{margin-left: 0%;}
+}
+
+.slide1{
+    background-color: red;
+}
+
+.slide2{
+    background-color: lightpink;
+}
+
+.slide3{
+    background-color: lightsalmon;
+}
+
+.cont2{
+    width: 1000px;
+    height: 550px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.img1,.img2{
+    width: 100%;
+    position: absolute;
+}
+
+.insideText1{
+    position:absolute;
+    bottom:250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    color: lightgray;
+    width: 25%;
+    left:10%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border:solid lightslategray;
+}
+
+
+.insideText2{
+    position:absolute;
+    bottom:200px;
+    color: black;
+    width: 50%;
+    left:25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.head1{
+    text-align: center;
+}
+
+
+.divCont{
+    width:1000px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.divCont img{
+    width:100%;
+    height: 100%;
+    position:relative;
+}
+
+.img{
+    width:33.33%;
+    height: 100%;
+    padding:5px;
+    float:left;
+    position:relative;
+}
+
+.butCont{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#open{
+    position: relative;
+    background-color: rgb(50,50,50);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: lightyellow;
+    left: 11.5%;
+    top:10px;
+    height:100%;
+}
+
+#open:hover{
+    background-color: lightgray;
+    color:rgb(50,50,50);
+    box-shadow: 0px 0px 5px 3px rgb(50,50,50);
+}
+
+#open2{
+    background-color: rgb(50,50,50);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: lightyellow;
+    left: 33%;
+    top:10px;
+    position: relative;
+}
+
+#open2:hover{
+    background-color: lightgray;
+    color:rgb(50,50,50);
+    box-shadow: 0px 0px 5px 3px rgb(50,50,50);
+}
+
+#open3{
+    background-color: rgb(50,50,50);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: lightyellow;
+    left: 54%;
+    top:10px;
+    position: relative;
+}
+
+#open3:hover{
+    background-color: lightgray;
+    color:rgb(50,50,50);
+    box-shadow: 0px 0px 5px 3px rgb(50,50,50);
+}
+
+
+.modalBack{
+    top:0px;
+    bottom:-212%;
+    left: 0px;
+    right:0px;
+    background-color: rgb(50,50,50,0.5);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+
+}
+
+.modalBack:target{
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in .5s;
+}
+
+
+.modalFront{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    position:relative;
+    margin:auto;
+
+    margin-left: auto;
+    margin-right:auto;
+
+    margin-top:1000px;
+}
+
+.close{
+    background-color: lightgray;
+    padding:10px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    text-decoration: none;
+    color:rgb(50,50,50);
+}
+
+.close:hover{
+    background-color:rgb(50,50,50) ;
+    color:lightgray;
+}
+
+.imgCont{
+    width: 40%;
+    height: 90%;
+    float:left;
+    margin-top: 7%;
+
+}
+
+.info{
+    width: 55%;
+    height: 90%;
+    float:left;
+    margin-top: 7%;
+}
+
+.imgCont img{
+    width: 100%;
+    height: 100%;
+    padding:10%;
+}
+
+.info p:nth-child(1){
+    font-size:1.5em;
+}
+
+.info p:nth-child(2){
+    font-size:0.7em;
+    margin-top:  -20px;
+}
+
+.info p:nth-child(3){
+    margin-top:5em;
+    margin-bottom: 2em;
+}
+
+.wasPrice{
+    font-weight:bolder;
+    text-decoration: line-through;
+}
+
+.nowPrice{
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    color:red;
+}
+
+.add{
+    background-color: rgb(50,50,50);
+    color:lightgray;
+    text-decoration: none;
+    padding:10px 20px;
+    display:inline-block;
+    margin-left: 30%;
+    margin-top: 2em;
+    font-weight: bolder;
+}
+
+.add:hover{
+    background-color: lightgray;
+    color:rgb(50,50,50);
+}
+
+.modalFront2{
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    position:relative;
+    margin:auto;
+
+    margin-left: auto;
+    margin-right:auto;
+
+    margin-top:1500px;
+}
+
+
+.infoCont{
+    background-color: gray;
+    width: 1200px;
+    height: 350px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+.help1,.help2,.help3,.help4{
+    height: 80%;
+    width: 25%;
+    float:left;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    color: lightyellow;
+}
+
+.media
+{
+        left: 925px;
+        padding-top: 15px;
+        text-decoration: none;
+        color: lightyellow;
+        position: relative;
+}
+
+.icons{
+    width: 80px;
+    float:right;
+    padding: 20px;
+}
+
+.openAll{
+    background-color: rgb(50,50,50);
+    top: 50px;
+    text-decoration: none;
+    color: lightyellow;
+    left:45%;
+    text-align:center;
+    top:10px;
+    position: relative;
+}
+
+.openAll2{
+    background-color: rgb(50,50,50);
+    top: 50px;
+    text-decoration: none;
+    color: lightyellow;
+    left:45%;
+    text-align:center;
+    top:10px;
+    position: relative;
+}
