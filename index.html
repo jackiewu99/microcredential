@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jackie Wu - Project1</title>
+        <link rel="stylesheet" href="project1.css">
+    </head>
+
+    <body bgcolor = "lightYellow" class = "back">
+        <div class = "cont1">
+            <img src = "images/logo.jfif" class = "logo">
+            <h1 class = topText1>My flower collection </h1>
+            <h4 class = topText2>Discover amazing flowers at a cheap price</h4>
+            <button type="button" class = "change">Click me to change background color</button>
+            
+        </div>
+        <div class = "slideshow1">
+            <div class = "slide-wrapper1">
+                <div class = "slide1">FREE SHIPPING AND HANDLING ON ORDERS OF $20</div>
+                <div class = "slide2">EXTRA ROSE ON EVERY ORDER OF 12</div>
+                <div class = "slide3">MOTHERS DAY SPECIAL 10% OFF</div>     
+            </div>
+        </div>
+
+        <div class = "cont2">
+            <img src = "images/img1.jpg" class = "img1">
+            <div class ="insideText1">Whatever the occasion, our evergreen 
+                collection of colorful stems, blossoming plants, and fragrant 
+                arrangements have warmed hearts all across the country with 
+                our flower delivery services.</div>
+        </div>
+        <figure class = "cont2">
+            <img src = "images/img2.jfif" class = "img2">
+            <div class = "insideText2">Flowers beguile us with their lovely scent
+                 and striking beauty, but many flowers have hidden attributes. 
+                 Flowers and plants have been used medicinally for thousands of 
+                 years. Some flowers, such as the lotus, have religious or historical 
+                 significance. Many flowers may also have unusual characteristics or 
+                 forms. Dive into the fascinating world of flower-lore and gain a fresh 
+                 appreciation for these plants.</div>
+        </figure>
+        <h1 class = "head1">ROSES</h1>
+        <hr>
+        <br><br><br>
+        <div class="divCont">
+            <div class="img">
+                <img src="images/rose1.jfif" class = "img1">
+            </div>
+
+            <div class="img">
+                <img src="images/rose2.jfif" class = "img2">
+                
+            </div>
+            <div class="img">
+                <img src="images/rose3.jfif" class = "img3">
+            </div>
+          </div>
+
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow1">
+            <div class = "modalFront">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/rose1.jfif" alt = "redRose" title = "Red Rose"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">Red Rose</p>
+                    <p>Picture of our red rose</p>
+                    <p>Red roses are one of our best sellers and perfect for that special occasion</p>
+                    <span class = "wasPrice">Was $15</span><span class = "nowPrice">$10</span>
+                    <hr>
+                    <form action = "checkout.html">
+                    <input type="submit" class = "add" onclick = "add_bag(1);"  value = "Add To Bag" id="item1">
+                </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow2">
+            <div class = "modalFront">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/rose2.jfif" alt = "pinkRose" title = "Pink Rose"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">Pink Rose</p>
+                    <p>Picture of our pink</p>
+                    <p>A nice light pink colored rose, perfect for any occasions!</p>
+                    <span class = "nowPrice">$10</span>
+                    <hr>
+                    <form action = "checkout.html">
+                    <input type="submit" class = "add" onclick = "add_bag(2);"  value = "Add To Bag" id="item2">
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow3">
+            <div class = "modalFront">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/rose3.jfif" alt = "whiteRose" title = "White Rose"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">White rose</p>
+                    <p>Picture of a white rose</p>
+                    <p>The white rose is a nice and friendly gift for anyone.</p>
+                    <span class = "nowPrice">$9</span>
+                    <hr>
+                    <form action = "checkout.html">
+                    <input type="submit" class = "add" onclick = "add_bag(3);"  value = "Add To Bag" id="item3">
+                </form>
+                </div>
+            </div>
+        </div>
+
+    <div class = "butCont">
+        <a href="#modalWindow1" id = "open" class = "cart">Add to bag</a>
+        <a href="#modalWindow2" id = "open2" class = "cart">Add to bag</a>
+        <a href="#modalWindow3" id = "open3" class = "cart">Add to bag</a>
+    </div>
+    <br><br>
+    <form action = "checkout.html" target = "_blank">
+    <div class = "butCont">
+        <button class = "openAll">Add all to cart</button>
+    </div>
+    </form>
+  
+
+    <br><br><br>
+
+    <h1 class = "head1">Bouquet</h1>
+        <hr>
+        <br><br><br>
+        <div class="divCont">
+            <div class="img">
+                <img src="images/bouquet1.jpg" class = "img1">
+            </div>
+
+            <div class="img">
+                <img src="images/bouquet2.jpg" class = "img2">
+                
+            </div>
+            <div class="img">
+                <img src="images/bouquet3.jpg" class = "img3">
+            </div>
+          </div>
+
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow4">
+            <div class = "modalFront2">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/bouquet1.jpg" alt = "bouquet1" title = "bouquet1"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">Red Bouquet</p>
+                    <p>A bouquet of red roses</p>
+                    <p>Our bouquet of roses come with 12 red roses</p>
+                    <span class = "nowPrice">100</span>
+                    <hr>
+                    <form action = "checkout.html">
+                    <input type="submit" class = "add" onclick = "add_bag(4);"  value = "Add To Bag" id="item4">
+                </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow5">
+            <div class = "modalFront2">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/bouquet2.jpg" alt = "bouquet2" title = "bouquet2"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">Assorted Bouquet</p>
+                    <p>Assortment of flowers</p>
+                    <p>This bouquet has an assortment of different flowers</p>
+                    <span class = "nowPrice">$115</span>
+                    <hr>
+                    <form action = "checkout.html">
+                    <input type="submit" class = "add" onclick = "add_bag(5);"  value = "Add To Bag" id="item5">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Window -->
+        <div class ="modalBack" id = "modalWindow6">
+            <div class = "modalFront2">
+                <a href="#11" class = "close">&#9932</a>
+                <div class = "imgCont">
+                    <img src= "images/bouquet3.jpg" alt = "bouquet3" title = "bouquet3"> 
+                </div>
+                <div class = "info">
+                    <p class = "itemName">Exotic Assortment</p>
+                    <p>Bouquet of exotic flowers</p>
+                    <p>This bouquet consists of different exotic flowers. A perfect gift to keep things spicy.</p>
+                    <span class = "nowPrice">$200</span>
+                    <hr>
+                    <form action = "checkout.html">
+                        <input type="submit" class = "add" onclick = "add_bag(6);"  value = "Add To Bag" id="item6">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <div class = "butCont">
+        <a href="#modalWindow4" id = "open" class = "cart">Add to bag</a>
+        <a href="#modalWindow5" id = "open2"class = "cart">Add to bag</a>
+        <a href="#modalWindow6" id = "open3"class = "cart">Add to bag</a>
+    </div>
+    <br><br>
+    <form action = "checkout.html" target = "_blank">
+    <div class = "butCont">
+        <button class = "openAll2">Add all to cart</button>
+    </div>
+    </form>
+  
+
+
+    
+        <script src = "project1.js"></script>
+
+<br><br><br><br><br><br>
+
+
+<div class = "infoCont">
+    <div>
+    <b><a href="#11" class = "help1">Help</a>
+    <a href="#11" class = "help2">About Us</a>
+    <a href="#11" class = "help3">Shipping</a>
+    <a href="#11" class = "help4">News</a></b>
+    </div>
+    <br><br><br>
+    <div>
+        <a href="#11" class = "help1">Missing Order</a>
+        <a href="#11" class = "help2">Locations</a>
+        <a href="#11" class = "help3">International</a>
+        <a href="#11" class = "help4">Newsletter</a>
+    </div>
+    <div>
+        <a href="#11" class = "help1">Missing Flowers</a>
+        <a href="#11" class = "help2">The family</a>
+        <a href="#11" class = "help3">United States</a>
+        <a href="#11" class = "help4">Email</a>
+    </div>
+    <p></p>
+    <br><br><br>
+    <hr>
+    <div class = "media">CONNECT WITH US</div>
+    <a href="https://www.facebook.com/" target = "_blank"><img src = "images/icon1.jfif" class = "icons"></a>
+    <a href="https://www.instagram.com/" target = "_blank"><img src = "images/icon2.jfif" class = "icons"></a>
+    <a href="https://twitter.com/" target = "_blank"><img src = "images/icon3.png" class = "icons"></a>
+    <a href="https://discord.com/" target = "_blank"><img src = "images/icon4.png" class = "icons"></a>
+    <a href="https://www.snapchat.com/" target = "_blank"><img src = "images/icon5.png" class = "icons"></a>
+</div>
+<footer align="center">@2022 My flower collection by Jackie Wu</footer>
+</body>
+</html>
